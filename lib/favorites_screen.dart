@@ -21,7 +21,7 @@ class FavoritesScreen extends StatelessWidget {
       itemBuilder: (context, index) {
         final photo = favorites[index];
         return ListTile(
-          leading: Image.network(photo.url),
+          leading: Image.network(photo.imageUrl),
           title: Text(photo.title),
           onTap: () {
             Navigator.push(

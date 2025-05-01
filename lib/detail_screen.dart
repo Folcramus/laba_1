@@ -15,10 +15,10 @@ class DetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.network(photo.url),
+            Image.network(photo.imageUrl),
             const SizedBox(height: 20),
             Text(
-              photo.title,
+              photo.imageUrl,
               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),

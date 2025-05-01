@@ -20,7 +20,7 @@ class TripListScreen extends StatelessWidget {
       itemBuilder: (context, index) {
         final photo = photoProvider.photos[index];
         return ListTile(
-          leading: Image.network(photo.url),
+          leading: Image.network(photo.imageUrl),
           title: Text(photo.title),
           trailing: IconButton(
             icon: Icon(

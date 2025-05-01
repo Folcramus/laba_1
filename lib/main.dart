@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:laba_1/login_street.dart';
 import 'package:provider/provider.dart';
-import 'travel_screen.dart';
 import 'photo_provider.dart';
 
 void main() {

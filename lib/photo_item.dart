@@ -1,15 +1,13 @@
 class PhotoItem {
   final int id;
   final String title;
-  final String url;
-  final String thumbnailUrl;
+  final String imageUrl;
   bool isFavorite;
 
   PhotoItem({
     required this.id,
     required this.title,
-    required this.url,
-    required this.thumbnailUrl,
+    required this.imageUrl,
     this.isFavorite = false,
   });
 
@@ -17,8 +15,8 @@ class PhotoItem {
     return PhotoItem(
       id: json['id'],
       title: json['title'],
-      url: json['url'],
-      thumbnailUrl: json['thumbnailUrl'],
+      imageUrl: json['image'],
+      isFavorite: json['isFavorite'] ?? false,
     );
   }
 
@@ -26,8 +24,7 @@ class PhotoItem {
     return {
       'id': id,
       'title': title,
-      'url': url,
-      'thumbnailUrl': thumbnailUrl,
+      'image': imageUrl,
       'isFavorite': isFavorite,
     };
   }

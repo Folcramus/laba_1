@@ -19,7 +19,7 @@ class PhotoProvider extends ChangeNotifier {
       _photos = decoded.map((e) => PhotoItem.fromJson(e)).toList();
       notifyListeners();
     } else {
-      var response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/photos?_limit=30'));
+      var response = await http.get(Uri.parse('https://fakestoreapi.com/products'));
       if (response.statusCode == 200) {
         List decoded = json.decode(response.body);
         _photos = decoded.map((e) => PhotoItem.fromJson(e)).toList();
