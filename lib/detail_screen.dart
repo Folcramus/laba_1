@@ -4,7 +4,7 @@ import 'photo_item.dart';
 class DetailScreen extends StatelessWidget {
   final PhotoItem photo;
 
-  const DetailScreen({Key? key, required this.photo}) : super(key: key);
+  const DetailScreen({super.key, required this.photo});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +15,10 @@ class DetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.network(photo.imageUrl),
+            Image.network(photo.imageUrl, width: 100, height: 100),
             const SizedBox(height: 20),
             Text(
-              photo.imageUrl,
+              photo.title,
               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),

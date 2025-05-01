@@ -3,7 +3,7 @@ import 'trip_list_screen.dart';
 import 'favorites_screen.dart';
 
 class TravelScreen extends StatefulWidget {
-  const TravelScreen({Key? key}) : super(key: key);
+  const TravelScreen({super.key});
 
   @override
   State<TravelScreen> createState() => _TravelScreenState();
